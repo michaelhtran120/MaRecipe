@@ -1,0 +1,84 @@
+:root {
+  --main-color: #79b473;
+}
+
+/* nav link hover animtation */
+.navbar-left .navbar-nav .nav-animation {
+  position: relative;
+}
+
+.navbar-left .navbar-nav .nav-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-left .navbar-nav .nav-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active-link {
+  position: relative;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  background-color: var(--main-color);
+}
+
+/* Flex navbar to fix buttons to the right */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Changing nav button background and padding */
+.nav-btn {
+  background-color: var(--main-color);
+}
+
+.navbar-right a {
+  padding: 8px 12px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  /* Keeps Animation from extending beyond text */
+  .navbar-left .navbar-nav .nav-link {
+    display: inline-block;
+  }
+
+  /* Adjust nav buttons locations */
+  .navbar-right .navbar-nav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: -40px;
+  }
+
+  .navbar-right a {
+    padding: 8px 12px !important;
+  }
+}
