@@ -8,30 +8,34 @@
 }
 
 .navbar-left .navbar-nav .nav-animation::after {
-  content: "";
+  content: ".";
+  color: transparent;
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
+  width: 0%;
   height: 3px;
   bottom: 0;
   left: 0;
+  right: 0;
+  margin: auto;
   background-color: var(--main-color);
   transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
+  transition: all 0.25s;
 }
 
 .navbar-left .navbar-nav .nav-animation:hover:after {
+  width: 100%;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.active-link {
+/*Nav bar active CSS*/
+.active {
   position: relative;
   color: var(--main-color);
   font-weight: bold;
 }
 
-.active-link::after {
+.active::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -39,7 +43,6 @@
   bottom: 0;
   left: 0;
   transform: scaleX(1);
-  transform-origin: bottom right;
   background-color: var(--main-color);
 }
 
@@ -59,6 +62,14 @@
   padding: 8px 12px !important;
 }
 
+/* Hamburger menu css changes */
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(121, 180, 115, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: var(--main-color);
+}
 @media only screen and (max-width: 768px) {
   .nav-container {
     flex-direction: column;
