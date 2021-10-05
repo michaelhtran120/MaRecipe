@@ -4,6 +4,8 @@
 
 * {
   font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* nav link hover animtation */
@@ -84,6 +86,7 @@
 /* Parallax Video Section */
 .video-section {
   position: relative;
+  padding: 0;
 }
 
 /* MEDIA QUERYs */
