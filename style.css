@@ -2,6 +2,10 @@
   --main-color: #79b473;
 }
 
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
 /* nav link hover animtation */
 .navbar-left .navbar-nav .nav-animation {
   position: relative;
@@ -70,6 +74,20 @@
 .navbar-light .navbar-toggler {
   color: var(--main-color);
 }
+
+/* Jumbotron / Hero section */
+
+.hero-text-highlight {
+  color: var(--main-color);
+}
+
+/* Parallax Video Section */
+.video-section {
+  position: relative;
+}
+
+/* MEDIA QUERYs */
+
 @media only screen and (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -79,6 +97,7 @@
   /* Keeps Animation from extending beyond text */
   .navbar-left .navbar-nav .nav-link {
     display: inline-block;
+    padding: 10px 0;
   }
 
   /* Adjust nav buttons locations */
