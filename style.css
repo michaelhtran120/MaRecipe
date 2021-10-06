@@ -10,7 +10,7 @@
 h1,
 h2,
 h2 span {
-  font-family: "Noto Serif";
+  font-family: "Noto Sans";
   /* font-style: italic; */
   font-weight: regular;
 }
@@ -95,17 +95,23 @@ h2 span {
   color: var(--main-color);
 }
 
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* Parallax Video Section */
 .video-section {
   position: relative;
   padding: 0;
 }
 .parallax-video {
+  position: relative;
   width: 100%;
-  height: 600px;
+  height: auto;
 }
+
 .parallax-video video {
-  top: 70px;
+  top: 65px;
   left: -20%;
   width: 150%;
   position: fixed;
@@ -126,11 +132,7 @@ h2 span {
 
 @media only screen and (max-width: 992px) {
   /* Parallax Video Section */
-  .parallax-video {
-    height: 450px;
-  }
   .parallax-video video {
-    top: 70px;
     left: -50%;
     width: 200%;
   }
@@ -160,20 +162,15 @@ h2 span {
     padding: 8px 12px !important;
   }
   /* Parallax Video Section */
-  .parallax-video {
-    height: 250px;
-  }
+
   .parallax-video video {
-    top: 80px;
+    left: -75%;
+    width: 250%;
   }
 }
 @media only screen and (max-width: 576px) {
   /* Parallax Video Section */
-  .parallax-video {
-    height: 250px;
-  }
   .parallax-video video {
-    top: 70px;
     left: -125%;
     width: 350%;
   }
