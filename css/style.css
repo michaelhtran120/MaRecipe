@@ -180,6 +180,11 @@ svg:hover {
   justify-content: flex-end;
   margin-right: 10px;
 }
+
+.modal-header {
+  border-bottom: 1px solid var(--main-color);
+}
+
 .modal-header img {
   width: 45%;
   margin-right: 10px;
@@ -214,6 +219,11 @@ svg:hover {
 #apple-btn {
   background-color: black;
   border: none;
+}
+
+#loginModal hr {
+  color: var(--main-color);
+  height: 2px;
 }
 
 /* Back to top button */
