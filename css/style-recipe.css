@@ -1,0 +1,19 @@
+.jumbo-bg {
+  position: relative;
+  top: 68px;
+}
+
+.jumbotron {
+  background: url(../media/recipe-background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.recipe-main-content {
+  position: relative;
+  top: 68px;
+}
+
+footer {
+  position: relative;
+  top: 68px;
+}
