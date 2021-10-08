@@ -126,7 +126,7 @@ h2 span {
 }
 
 .parallax-video video {
-  top: 65px;
+  top: 60px;
   width: 110%;
   position: fixed;
   z-index: -999;
