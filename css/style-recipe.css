@@ -1,16 +1,51 @@
-.jumbo-bg {
-  position: relative;
-}
+/* Jumbotron hero CSS */
 
 .jumbotron {
   background: url(../media/recipe-background.jpg) no-repeat center center;
   background-size: cover;
 }
 
-.recipe-main-content {
-  position: relative;
+/* Accordion CSS */
+
+.accordion-section {
+  background-color: var(--main-color);
 }
 
-footer {
-  position: relative;
+.card-header[aria-expanded="true"] {
+  background: var(--main-color);
+  color: white;
+}
+.card-header[aria-expanded="false"] {
+  background: rgb(248, 249, 250);
+  color: black;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+  /* Macro Section */
+  .macro h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Macro Section */
+  .macro h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Macro Section */
+  .macro h2 {
+    font-size: 1.1rem;
+  }
 }

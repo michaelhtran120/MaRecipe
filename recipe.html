@@ -61,12 +61,12 @@
             <div class="nav navbar-left">
               <ul class="navbar-nav justify-content-end">
                 <li class="nav-item mx-3">
-                  <a class="nav-link nav-animation active" href="./recipe.html"
+                  <a class="nav-link nav-animation active" href="#"
                     ><span>Recipes</span></a
                   >
                 </li>
                 <li class="nav-item mx-3">
-                  <a class="nav-link nav-animation" href="communities.html"
+                  <a class="nav-link nav-animation" href="community.html"
                     ><span>Communities</span></a
                   >
                 </li>
@@ -182,95 +182,146 @@
     </section>
 
     <!-- Recipe Accordion -->
-    <section class="p-5 bg-dark">
+    <section class="p-5 accordion-section bg-white">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-            <div class="accordion accordion-flush">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
-                  >
-                    Accordion Item #1
-                  </button>
-                </h2>
+          <div class="col col-md-8 col-lg-7">
+            <h3>What you can do with your recipes</h3>
+            <div id="accordion" class="mt-4">
+              <!-- Card One - Clone Recipe -->
+
+              <div class="card">
                 <div
-                  id="flush-collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingOne"
+                  class="card-header"
+                  id="headingOne"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <h5 class="mb-0 p-2">Clone Recipes</h5>
+                </div>
+
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
                   data-bs-parent="#accordion"
                 >
-                  <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the first item's accordion body.
+                  <div class="card-body p-4">
+                    <p>
+                      Make copies of your favorite recipes and make minor
+                      changes without losing the original.
+                    </p>
+                    <p>
+                      Whether you are experimenting or adjusting for the
+                      ingredients for dietary needs, no need to sweat on all the
+                      details.
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseTwo"
-                  >
-                    Accordion Item #2
-                  </button>
-                </h2>
+
+              <!-- Card Two - Discover Recipes -->
+
+              <div class="card">
                 <div
-                  id="flush-collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingTwo"
+                  class="card-header"
+                  id="headingTwo"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <h5 class="mb-0 p-2">Explore Delicious Options</h5>
+                </div>
+
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
                   data-bs-parent="#accordion"
                 >
-                  <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the second item's accordion body. Let's imagine this being
-                    filled with some actual content.
+                  <div class="card-body p-4">
+                    <p>
+                      MaRecipe is a community based app where we promote sharing
+                      of delicious dishes from anywhere.
+                    </p>
+                    <p>
+                      Search for specific dishes or join a community that you
+                      are interested in.
+                    </p>
+                    <a href="community.html"> Community &#10137;</a>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseThree"
-                  >
-                    Accordion Item #3
-                  </button>
-                </h2>
+
+              <!-- Card Three - Share Recipes -->
+
+              <div class="card">
                 <div
-                  id="flush-collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree"
+                  class="card-header"
+                  id="headingThree"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <h5 class="mb-0 p-2">Share with others</h5>
+                </div>
+
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
                   data-bs-parent="#accordion"
                 >
-                  <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the third item's accordion body. Nothing more exciting
-                    happening here in terms of content, but just filling up the
-                    space to make it look, at least at first glance, a bit more
-                    representative of how this would look in a real-world
-                    application.
+                  <div class="card-body p-4">
+                    <p>
+                      Got a delicious dish you want to share with the community
+                      or found something you want to send to friends or family?
+                    </p>
+                    <p>
+                      Easily add a recipe to a community or send a link to a
+                      recipe.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Macro Section -->
+    <section class="macro">
+      <div class="container-fluid bg-dark text-light text-center p-5">
+        <div class="row p-5">
+          <div class="col">
+            <h2>Tracking recipe macros shouldn't be difficult...</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2>Let us help you with the math!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container p-lg-5 pt-5">
+        <div class="row align-items-center justify-content-around">
+          <div class="col-md-6">
+            <h3 class="text-left">
+              Choose your serving quantities and watch ingredients and macros
+              adjust automatically.
+            </h3>
+          </div>
+          <div class="col-8 col-md-5 p-5">
+            <img
+              src="./media/macro-screen.png"
+              alt="Macro screen"
+              class="img-fluid"
+            />
           </div>
         </div>
       </div>
