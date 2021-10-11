@@ -89,7 +89,12 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-sm nav-link nav-btn text-light" href="#"
+                  <a
+                    role="button"
+                    class="btn btn-sm nav-link nav-btn text-light"
+                    aria-current="login btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#signUpModal"
                     >Sign Up</a
                   >
                 </li>
@@ -107,15 +112,16 @@
         <div class="container pt-5">
           <div class="row justify-content-around align-items-center">
             <div class="col-md-6 text-light">
-              <h1 class="display-4">Never forget a recipe again!</h1>
-              <p class="lead pt-5">
-                Let MaRecipe help you organize and maintain your recipe lists.
+              <h1 class="display-4">Explore our communities</h1>
+              <p class="lead pt-3">
+                Plenty of recipes to discover and try. Send your palette on an
+                adventure.
               </p>
             </div>
             <div class="col-md-4 col-lg-3 d-none d-md-block">
               <img
                 class="img-fluid"
-                src="./media/recipe-mobile-page.png"
+                src="./media/community-mobile-page.png"
                 alt="mobile recipe screen"
               />
             </div>
@@ -298,8 +304,7 @@
                   </div>
                   <div class="col-12" id="form-btns">
                     <button
-                      id="cancel-btn"
-                      class="btn btn-secondary btn-sm ml-auto"
+                      class="btn btn-secondary btn-sm ml-auto cancel-btn"
                       type="button"
                       data-bs-dismiss="modal"
                     >
@@ -315,41 +320,196 @@
                   </div>
                 </div>
               </form>
-              <hr />
-              <div class="container-fluid">
-                <div class="row justify-content-center">
-                  <div class="col-12">
-                    <a
-                      role="button"
-                      id="google-btn"
-                      class="btn btn-lg text-decoration-none"
-                      href=""
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <a
+                    role="button"
+                    id="google-btn"
+                    class="btn btn-lg text-decoration-none"
+                    href=""
+                  >
+                    <img
+                      class="img-fluid"
+                      src="media/Google-logo.svg"
+                      alt="Google Icon"
+                    />
+                    <p class="d-inline">Continue with Google</p>
+                  </a>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-2">
+                <div class="col-12">
+                  <a
+                    role="button"
+                    id="apple-btn"
+                    class="btn btn-lg text-decoration-none text-light"
+                    href=""
+                  >
+                    <img
+                      class="img-fluid"
+                      src="media/apple-logo.svg"
+                      alt="Google Icon"
+                    />
+                    <p class="d-inline">Sign in with Apple</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Window - Sign Up-->
+    <div
+      id="signUpModal"
+      class="modal fade"
+      role="dialog"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <div class="d-flex justify-content-start align-items-center">
+              <img src="./media/logo.svg" class="img-fluid" alt="logo" />
+              <h3 class="modal-title">Sign Up</h3>
+            </div>
+            <a
+              class="text-decoration-none display-5 text-dark close"
+              role="button"
+              data-bs-dismiss="modal"
+            >
+              &times;
+            </a>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <p id="error-email-p" class="mb-1 error-msg"></p>
+                  <div class="form-group col-12">
+                    <label for="signUpEmail" class="sr-only"
+                      >Email address</label
                     >
-                      <img
-                        class="img-fluid"
-                        src="media/Google-logo.svg"
-                        alt="Google Icon"
-                      />
-                      <p class="d-inline">Continue with Google</p>
-                    </a>
+                    <input
+                      type="email"
+                      class="mt-1 form-control form-control-sm"
+                      id="signUpEmail"
+                      placeholder="Enter email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-12 mt-2">
+                    <label for="confirmSignUpEmail" class="sr-only"
+                      >Confirm Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="mt-1 form-control form-control-sm"
+                      id="confirmSignUpEmail"
+                      placeholder="Confirm email"
+                      required
+                    />
                   </div>
                 </div>
-                <div class="row justify-content-center mt-2">
-                  <div class="col-12">
-                    <a
-                      role="button"
-                      id="apple-btn"
-                      class="btn btn-lg text-decoration-none text-light"
-                      href=""
-                    >
-                      <img
-                        class="img-fluid"
-                        src="media/apple-logo.svg"
-                        alt="Google Icon"
-                      />
-                      <p class="d-inline">Sign in with Apple</p>
-                    </a>
+                <div class="form-row">
+                  <p id="error-password-p" class="mt-4 mb-1 error-msg"></p>
+                  <div class="form-group col-12">
+                    <label for="signUpPassword" class="sr-only">Password</label>
+                    <input
+                      type="password"
+                      class="mt-1 form-control form-control-sm"
+                      id="signUpPassword"
+                      placeholder="Password"
+                      minlength="8"
+                      required
+                    />
                   </div>
+                  <div class="form-group col-12 mt-2">
+                    <label for="confirmSignUpPassword" class="sr-only"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="password"
+                      class="mt-1 form-control form-control-sm"
+                      id="confirmSignUpPassword"
+                      placeholder="Confirm Password"
+                      minlength="8"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 mt-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" />
+                      <label for="" class="form-check-label"
+                        ><small>
+                          <a href="" style="text-decoration: none"
+                            >Agree to Terms & Services
+                          </a></small
+                        ></label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 my-4" id="form-btns">
+                    <button
+                      class="btn btn-secondary btn-sm ml-auto cancel-btn"
+                      type="button"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      id="signUp-btn"
+                      type="submit"
+                      class="btn btn-sm text-light"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <a
+                    role="button"
+                    id="google-btn"
+                    class="btn btn-lg text-decoration-none"
+                    href=""
+                  >
+                    <img
+                      class="img-fluid"
+                      src="media/Google-logo.svg"
+                      alt="Google Icon"
+                    />
+                    <p class="d-inline">Continue with Google</p>
+                  </a>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-2">
+                <div class="col-12">
+                  <a
+                    role="button"
+                    id="apple-btn"
+                    class="btn btn-lg text-decoration-none text-light"
+                    href=""
+                  >
+                    <img
+                      class="img-fluid"
+                      src="media/apple-logo.svg"
+                      alt="Google Icon"
+                    />
+                    <p class="d-inline">Sign up with Apple</p>
+                  </a>
                 </div>
               </div>
             </div>

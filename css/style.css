@@ -171,7 +171,12 @@ svg:hover {
   top: 25%;
 }
 
-#login-btn {
+#signUpModal {
+  top: 12%;
+}
+
+#login-btn,
+#signUp-btn {
   background-color: var(--main-color);
 }
 
@@ -198,8 +203,12 @@ svg:hover {
   background-color: var(--main-color);
 }
 
-#cancel-btn {
+.cancel-btn {
   margin-right: 5px;
+}
+
+.modal-footer {
+  border-top: 1px solid var(--main-color);
 }
 
 #google-btn p,
@@ -221,9 +230,15 @@ svg:hover {
   border: none;
 }
 
-#loginModal hr {
+#loginModal hr,
+#signUpModal hr {
   color: var(--main-color);
   height: 2px;
+}
+
+.error-msg {
+  font-size: 0.9rem;
+  color: red;
 }
 
 /* Back to top button */

@@ -20,3 +20,73 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Sign Up Form Check
+
+let errorEmailP = document.getElementById("error-email-p");
+let errorPasswordP = document.getElementById("error-password-p");
+let signUpBtn = document.getElementById("signUp-btn");
+
+signUpBtn.disabled = true;
+
+let emailInput = document.getElementById("signUpEmail");
+let confirmEmailInput = document.getElementById("confirmSignUpEmail");
+
+let passwordInput = document.getElementById("signUpPassword");
+let confirmPasswordInput = document.getElementById("confirmSignUpPassword");
+
+let borderErrStyle = "1px solid red";
+let borderStyle = "1px solid #ced4da";
+
+// Email check
+
+confirmEmailInput.addEventListener("change", () => {
+  if (emailInput.value !== confirmEmailInput.value) {
+    errorEmailP.textContent = `Email's do not match`;
+    emailInput.style.border = borderErrStyle;
+    confirmEmailInput.style.border = borderErrStyle;
+    signUpBtn.disabled = true;
+  } else {
+    errorEmailP.textContent = "";
+    emailInput.style.border = borderStyle;
+    confirmEmailInput.style.border = borderStyle;
+    if (
+      passwordInput.value === confirmPasswordInput.value &&
+      passwordInput.value !== "" &&
+      confirmPasswordInput !== ""
+    ) {
+      signUpBtn.disabled = false;
+    }
+  }
+});
+
+// Password check
+
+passwordInput.addEventListener("keypress", () => {
+  let passwordValue = document.getElementById("signUpPassword").value;
+  if (passwordValue.length < 8) {
+    errorPasswordP.textContent = "Password too short - Minimum 8 characters ";
+  } else {
+    errorPasswordP.textContent = "";
+  }
+});
+
+confirmPasswordInput.addEventListener("change", () => {
+  if (passwordInput.value !== confirmPasswordInput.value) {
+    errorPasswordP.textContent += `Password's do not match `;
+    passwordInput.style.border = borderErrStyle;
+    confirmPasswordInput.style.border = borderErrStyle;
+    signUpBtn.disabled = true;
+  } else {
+    errorPasswordP.textContent = "";
+    passwordInput.style.border = borderStyle;
+    confirmPasswordInput.style.border = borderStyle;
+    if (
+      emailInput.value === confirmEmailInput.value &&
+      emailInput.value !== "" &&
+      confirmEmailInput !== ""
+    ) {
+      signUpBtn.disabled = false;
+    }
+  }
+});
