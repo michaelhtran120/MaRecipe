@@ -127,3 +127,7 @@ confirmPasswordInput.addEventListener("change", () => {
     }
   }
 });
+
+window.onload = () => {
+  console.log("page loaded");
+};
