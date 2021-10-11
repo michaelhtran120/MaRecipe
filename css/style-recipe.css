@@ -1,8 +1,80 @@
+hr {
+  height: 2px;
+}
+
 /* Jumbotron hero CSS */
 
 .jumbotron {
   background: url(../media/recipe-background.jpg) no-repeat center center;
   background-size: cover;
+}
+
+/* Featured Recipes Section */
+
+.featured-recipes h2,
+.featured-recipes h5 {
+  letter-spacing: 2px;
+  color: var(--main-color);
+}
+
+.featured-recipes .card {
+  position: relative;
+  height: 480px;
+  border-radius: 10px;
+}
+
+.featured-recipes img {
+  height: 300px;
+  object-fit: cover;
+  border: 3px solid transparent;
+  border-radius: 10px 10px 0 0;
+}
+
+.featured-recipes a {
+  position: absolute;
+  width: 90%;
+  bottom: 5px;
+  background-color: none;
+  color: var(--main-color);
+  letter-spacing: 0;
+}
+
+.featured-recipes a:hover {
+  letter-spacing: 4px;
+  color: var(--main-color);
+  transition: all 400ms ease-in-out;
+}
+
+.featured-recipes a:before,
+.featured-recipes a:after {
+  backface-visibility: hidden;
+  border: 1px solid var(--main-color);
+  bottom: 0px;
+  content: "";
+  display: block;
+  margin: 5px auto;
+  position: relative;
+  transition: all 400ms ease-in-out;
+  width: 0;
+}
+
+.featured-recipes a:hover:before,
+.featured-recipes a:hover:after {
+  backface-visibility: hidden;
+  border-color: var(--main-color);
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.featured-recipes a:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+/* Recipe App/Link Section */
+.recipe-app-link-content h2 {
+  color: var(--main-color);
 }
 
 /* Accordion CSS */
@@ -27,9 +99,27 @@
 
 /* Media Queries */
 @media only screen and (max-width: 1200px) {
+  /* Featured Recipe section */
+  .featured-recipes .card {
+    height: 420px;
+  }
+
+  .featured-recipes img {
+    height: 225px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
+  /* Featured Recipe section */
+
+  .featured-recipes .card {
+    height: 440px;
+  }
+
+  .featured-recipes img {
+    height: 250px;
+  }
+
   /* Macro Section */
   .macro h2 {
     font-size: 1.5rem;
@@ -37,6 +127,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+  /* Featured Recipe section */
+
+  .featured-recipes .card {
+    height: 440px;
+  }
+
+  .featured-recipes img {
+    height: 200px;
+  }
+
   /* Macro Section */
   .macro h2 {
     font-size: 1.3rem;

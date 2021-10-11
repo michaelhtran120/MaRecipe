@@ -20,14 +20,3 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-// let accordionButtons = document.getElementsByClassName("accordion-button");
-
-// let accordionBtnOne = document.getElementById("accordion-btn-one");
-
-// console.log(accordionBtnOne);
-// let accordionBtnOneClassList = accordionBtnOne.classList;
-// let collapseResult = accordionBtnOneClassList.contains("collapsed");
-// if (!collapseResult) {
-//   accordionBtnOne.style.backgroundColor = "000";
-// }
