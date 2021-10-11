@@ -3,3 +3,63 @@
     center;
   background-size: cover;
 }
+
+/* Trending Communities */
+
+.trending-communities h5,
+.trending-communities h2 {
+  color: var(--main-color);
+}
+
+.trending-communities .card {
+  height: 400px;
+}
+
+.trending-communities img {
+  object-fit: cover;
+  height: 220px;
+}
+
+.trending-communities a {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: var(--main-color);
+}
+
+.trending-communities p {
+  display: inline;
+}
+
+.trending-communities .card-footer {
+  height: 70px;
+}
+
+.trending-communities .row {
+  height: 100%;
+}
+
+/* Communities Info Section */
+
+#communities-info-or {
+  color: var(--main-color);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 992px) {
+  .communities-info h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .communities-info h3 {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .communities-info h3 {
+    font-size: 1rem;
+  }
+}
