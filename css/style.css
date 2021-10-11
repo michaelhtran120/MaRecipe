@@ -88,10 +88,14 @@ h2 span {
 /* Changing nav button background and padding */
 .nav-btn {
   background-color: var(--main-color);
+  padding: 8px 12px !important;
+  transition: 0.4s;
 }
 
-.navbar-right a {
-  padding: 8px 12px !important;
+.nav-btn:hover,
+.nav-btn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--main-color);
+  transform: translateY(-0.25em);
 }
 
 /* Hamburger menu css changes */
