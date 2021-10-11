@@ -1,0 +1,19 @@
+/* Jumbotron hero CSS */
+
+.jumbotron {
+  background: url(../media/hero-images/shopping-hero.jpg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+/* Shopping List Feature Section */
+
+.shopping-feature video {
+  width: 275px;
+  margin: 0 auto;
+}
+
+.shopping-feature li {
+  list-style: none;
+  margin: 20px 0px;
+}
