@@ -5,7 +5,7 @@ hr {
 /* Jumbotron hero CSS */
 
 .jumbotron {
-  background: url(../media/recipe-background.jpg) no-repeat center center;
+  background: url(../media/hero-images/recipe-hero.jpg) no-repeat center center;
   background-size: cover;
 }
 
