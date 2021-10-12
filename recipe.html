@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="./css/loadingBar.css" />
 
@@ -657,14 +657,14 @@
                   </div>
                   <div class="col-12" id="form-btns">
                     <button
-                      class="btn btn-secondary btn-sm ml-auto cancel-btn"
+                      class="btn btn-secondary btn-sm ml-auto cancelBtn"
                       type="button"
                       data-bs-dismiss="modal"
                     >
                       Cancel
                     </button>
                     <button
-                      id="login-btn"
+                      id="loginBtn"
                       type="submit"
                       class="btn btn-sm text-light"
                     >
@@ -745,7 +745,7 @@
             <div class="container-fluid">
               <form>
                 <div class="form-row">
-                  <p id="error-email-p" class="mb-1 error-msg"></p>
+                  <p id="errorEmailP" class="mb-1 errorMsg"></p>
                   <div class="form-group col-12">
                     <label for="signUpEmail" class="sr-only"
                       >Email address</label
@@ -772,7 +772,7 @@
                   </div>
                 </div>
                 <div class="form-row">
-                  <p id="error-password-p" class="mt-4 mb-1 error-msg"></p>
+                  <p id="errorPasswordP" class="mt-4 mb-1 errorMsg"></p>
                   <div class="form-group col-12">
                     <label for="signUpPassword" class="sr-only">Password</label>
                     <input
@@ -811,14 +811,14 @@
                   </div>
                   <div class="col-12 my-4" id="form-btns">
                     <button
-                      class="btn btn-secondary btn-sm ml-auto cancel-btn"
+                      class="btn btn-secondary btn-sm ml-auto cancelBtn"
                       type="button"
                       data-bs-dismiss="modal"
                     >
                       Cancel
                     </button>
                     <button
-                      id="signUp-btn"
+                      id="signUpBtn"
                       type="submit"
                       class="btn btn-sm text-light"
                     >

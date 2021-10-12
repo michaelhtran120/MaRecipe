@@ -183,8 +183,8 @@ svg:hover {
   top: 12%;
 }
 
-#login-btn,
-#signUp-btn {
+#loginBtn,
+#signUpBtn {
   background-color: var(--main-color);
 }
 
@@ -211,7 +211,7 @@ svg:hover {
   background-color: var(--main-color);
 }
 
-.cancel-btn {
+.cancelBtn {
   margin-right: 5px;
 }
 
@@ -244,7 +244,7 @@ svg:hover {
   height: 2px;
 }
 
-.error-msg {
+.errorMsg {
   font-size: 0.9rem;
   color: red;
 }
