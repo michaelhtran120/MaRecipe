@@ -67,54 +67,61 @@ let addBorderStyle = function (inputElements) {
   $(inputElements[1]).css("border", borderStyle);
 };
 
-let emailInput = $("#signUpEmailInput");
-let confirmEmailInput = $("#confirmSignUpEmailInput");
-let passwordInput = $("#signUpPasswordInput");
-let confirmPasswordInput = $("#confirmSignUpPasswordInput");
+const emailInputsArr = [$("#signUpEmailInput"), $("#confirmSignUpEmailInput")];
+const [emailInput, confirmEmailInput] = emailInputsArr;
+
+const passwordInputsArr = [
+  $("#signUpPasswordInput"),
+  $("#confirmSignUpPasswordInput"),
+];
+const [passwordInput, confirmPasswordInput] = passwordInputsArr;
 
 // Form - Email check for sign up
-$(confirmEmailInput).change(function () {
-  let inputElementsArr = [$(emailInput), this];
 
-  if ($(emailInput).val() !== $(this).val()) {
-    $("#errorEmailP").text(`Email's do not match`);
-    addErrBorderStyle(inputElementsArr);
-  } else {
-    $("#errorEmailP").text("");
-    addBorderStyle(inputElementsArr);
-    if (
-      $(passwordInput).val() === $(confirmPasswordInput).val() &&
-      $(passwordInput).val() !== "" &&
-      $(confirmPasswordInput).val() !== ""
-    ) {
-      $("#signUpBtn").prop("disabled", false);
+$(emailInputsArr).each(function () {
+  $(this).change(function () {
+    console.log("change");
+
+    if ($(confirmEmailInput).val() !== $(emailInput).val()) {
+      $("#errorEmailP").text(`Email's do not match`);
+      addErrBorderStyle(emailInputsArr);
+    } else {
+      $("#errorEmailP").text("");
+      addBorderStyle(emailInputsArr);
+      if (
+        $(passwordInput).val() === $(confirmPasswordInput).val() &&
+        $(passwordInput).val() !== "" &&
+        $(confirmPasswordInput).val() !== ""
+      ) {
+        $("#signUpBtn").prop("disabled", false);
+      }
     }
-  }
+  });
 });
 
 // Password check logic
 // Password check length on keypress
 
-$(passwordInput).keypress(function () {
+$(passwordInput).change(function () {
   if ($(this).val().length > 6) {
     $("#errorPasswordP").text(" ");
+    passwordInput.css("border", borderStyle);
   } else {
     $("#errorPasswordP").text("Password too short - Minimum 8 characters");
+    passwordInput.css("border", borderErrStyle);
   }
 });
 
 // Password confirmation check
 
 $(confirmPasswordInput).change(function () {
-  let inputElementsArr = [$(passwordInput), this];
-
   if ($(this).val() !== $(passwordInput).val()) {
     $("#errorPasswordP").text(`Passwords do not match`);
-    addErrBorderStyle(inputElementsArr);
+    addErrBorderStyle(passwordInputsArr);
     $("#signUpBtn").prop("disabled", true);
   } else {
     $("#errorPasswordP").text("");
-    addBorderStyle(inputElementsArr);
+    addBorderStyle(passwordInputsArr);
     if (
       $(emailInput).val() === $(confirmEmailInput).val() &&
       $(emailInput).val() !== "" &&
