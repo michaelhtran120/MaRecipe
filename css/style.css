@@ -162,7 +162,7 @@ h2 span {
 
 /* Footer */
 footer {
-  /* position: relative; */
+  border-top: 1px solid var(--main-color);
 }
 footer a {
   color: var(--main-color);
