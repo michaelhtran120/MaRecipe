@@ -1,47 +1,33 @@
-//Lazy Load Images
+const observer = lozad();
+observer.observe();
 
-document.addEventListener("DOMContentLoaded", function () {
-  let lazyLoadImages = document.querySelectorAll(".lazy");
-  let lazyLoadThrottleTimeout;
+// Scroll Content Animation - IntersectionObserver API
 
-  function lazyLoad() {
-    if (lazyLoadThrottleTimeout) {
-      clearTimeout(lazyLoadThrottleTimeout);
+const faders = document.querySelectorAll(".fade-in");
+const sliders = document.querySelectorAll(".slide-in");
+
+const options = {
+  threshold: 0,
+  rootMargin: "0px 0px -100px 0px",
+};
+
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
     }
+  });
+},
+options);
 
-    lazyLoadThrottleTimeout = setTimeout(function () {
-      var scrollTop = window.pageYOffset;
-      lazyLoadImages.forEach(function (img) {
-        if (img.offsetTop < window.innerHeight + scrollTop) {
-          img.src = img.dataset.src;
-          img.classList.remove("lazy");
-        }
-      });
-      if (lazyLoadImages.length == 0) {
-        document.removeEventListener("scroll", lazyLoad);
-        window.removeEventListener("resize", lazyLoad);
-        window.removeEventListener("orientationChange", lazyLoad);
-      }
-    }, 20);
-  }
-
-  document.addEventListener("scroll", lazyLoad);
-  window.addEventListener("resize", lazyLoad);
-  window.addEventListener("orientationChange", lazyLoad);
-});
-
-// When the user scrolls down 20px from the top of the document, show the button
-$(window).scroll(function () {
-  scrollFunction();
-});
-
-function scrollFunction() {
-  if ($(document).scrollTop() > 20) {
-    $("#btn-back-to-top").css("display", "block");
-  } else {
-    $("#btn-back-to-top").css("display", "none");
-  }
-}
+faders.forEach((fader) => appearOnScroll.observe(fader));
+sliders.forEach((slider) => appearOnScroll.observe(slider));
 
 // When the user clicks on the button, scroll to the top of the document
 $("#btn-back-to-top").click(backToTop);

@@ -3,6 +3,10 @@
   /* --secondary-color: #fcf7f8; */
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
@@ -263,6 +267,35 @@ svg:hover {
   bottom: 50px;
   right: 20px;
   display: none;
+}
+
+/* Lazy Load Animation */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-100%);
+}
+.from-right {
+  transform: translateX(100%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /* MEDIA QUERYs */

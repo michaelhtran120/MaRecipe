@@ -23,8 +23,21 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Progress Bar CDN-->
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="./css/loadingBar.css" />
+
+    <!--Animation CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--Lazy Load CDN - Lozad-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
 
     <title>MaRecipe</title>
   </head>
@@ -118,7 +131,7 @@
             </div>
             <div class="col-md-4 col-lg-3 d-none d-md-block">
               <img
-                class="img-fluid"
+                class="img-fluid animate__animated animate__fadeInDown"
                 src="./media/shopping-mobile-page.png"
                 alt="mobile recipe screen"
               />
@@ -144,16 +157,24 @@
           <div class="col-9 col-md-10 col-lg-8 pb-5">
             <ul>
               <li>
-                <h4>1. Save time at the store by creating a grocery list.</h4>
+                <h4 class="fade-in">
+                  1. Save time at the store by creating a grocery list.
+                </h4>
               </li>
               <li>
-                <h4>2. Save money by buying only what you need.</h4>
+                <h4 class="fade-in">
+                  2. Save money by buying only what you need.
+                </h4>
               </li>
               <li>
-                <h4>3. Easily check off items and be on your way.</h4>
+                <h4 class="fade-in">
+                  3. Easily check off items and be on your way.
+                </h4>
               </li>
               <li>
-                <h4>4. Minimize waste by buying exactly what you need.</h4>
+                <h4 class="fade-in">
+                  4. Minimize waste by buying exactly what you need.
+                </h4>
               </li>
             </ul>
           </div>

@@ -25,8 +25,21 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Progress Bar CDN-->
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="./css/loadingBar.css" />
+
+    <!--Animation CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--Lazy Load CDN - Lozad-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
 
     <title>MaRecipe</title>
   </head>
@@ -107,7 +120,6 @@
     </nav>
 
     <!--Recipe Jumbotron / Hero -->
-
     <section class="jumbo-bg">
       <div class="jumbotron p-5">
         <div class="container pt-5">
@@ -120,7 +132,7 @@
             </div>
             <div class="col-md-4 col-lg-3 d-none d-md-block">
               <img
-                class="img-fluid"
+                class="img-fluid animate__animated animate__fadeInRightBig"
                 src="./media/recipe-mobile-page.png"
                 alt="mobile recipe screen"
               />
@@ -131,7 +143,7 @@
     </section>
 
     <!--Featured Recipe Section -->
-    <div class="featured-recipes pt-5">
+    <div class="featured-recipes py-5">
       <div class="container-fluid p-sm-5">
         <h2 class="text-center">FEATURED RECIPES</h2>
         <hr class="text-black-50" />
@@ -140,7 +152,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/red-velvet.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="red velvet cupcake"
               />
               <div class="card-body">
@@ -157,7 +169,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/pesto-pasta.jpg"
-                class="card-img-top lazy"
+                class="card-img-top fade-in lozad"
                 alt="pesto pasta"
               />
               <div class="card-body">
@@ -171,7 +183,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/neopolitan.jpg"
-                class="card-img-top lazy"
+                class="card-img-top fade-in lozad"
                 alt="neopolitan pizza"
               />
               <div class="card-body">
@@ -188,7 +200,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/chow-mein.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="chow mein"
               />
               <div class="card-body">
@@ -204,7 +216,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/cookie.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="cookie"
               />
               <div class="card-body">
@@ -220,7 +232,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/cheesecake.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="cheesecake"
               />
               <div class="card-body">
@@ -234,7 +246,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/fritata.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="fritata"
               />
               <div class="card-body">
@@ -250,7 +262,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/margarita.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="margarita"
               />
               <div class="card-body">
@@ -264,7 +276,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/food-images/broth.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="broth"
               />
               <div class="card-body">
@@ -282,7 +294,7 @@
 
     <!-- Macro Section -->
     <section class="macro">
-      <div class="container-fluid bg-dark text-light text-center p-5">
+      <div class="container-fluid bg-dark text-light text-center py-5">
         <div class="row pt-5 pb-3">
           <div class="col">
             <h2>
@@ -296,7 +308,7 @@
           </div>
         </div>
       </div>
-      <div class="container p-lg-5 pt-5">
+      <div class="container p-lg-5 pt-5 pb-5">
         <div class="row align-items-center justify-content-around">
           <div class="col-md-6">
             <h3 class="text-center text-md-start">
@@ -308,7 +320,7 @@
             <img
               data-src="./media/macro-screen.png"
               alt="Macro screen"
-              class="img-fluid lazy"
+              class="img-fluid lozad fade-in"
             />
           </div>
         </div>
@@ -316,19 +328,18 @@
     </section>
 
     <!--Recipe App Link & Sign up - Log In Section-->
-
-    <section class="app-link-content bg-light text-dark text-center p-5">
+    <section class="app-link-content bg-light text-dark text-center p-sm-5">
       <div class="container p-lg-2">
         <h2 class="text-center">Start Collecting Recipes</h2>
         <hr class="text-black-50" />
-        <div class="row justify-content-around mt-5 p-5">
+        <div class="row justify-content-around mt-sm-5 p-5">
           <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
             <h3>With your phone</h3>
             <p class="lead mt-4 mt-lg-4 mt-lg-4">
               Download the app from the app store
             </p>
             <div class="row mt-4 justify-content-center">
-              <div class="col-5 col-lg-6">
+              <div class="col-6 col-md-5 col-lg-6">
                 <a href="https://play.google.com/store?hl=en_US&gl=US"
                   ><img
                     class="img-fluid"
@@ -336,7 +347,7 @@
                     alt="google play logo"
                 /></a>
               </div>
-              <div class="col-5 col-lg-6">
+              <div class="col-6 col-md-5 col-lg-6">
                 <a href="https://www.apple.com/app-store/"
                   ><img
                     class="img-fluid"

@@ -22,8 +22,19 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Progress Bar CDN-->
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="./css/loadingBar.css" />
+    <!--Animation CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Lazy Load CDN - Lozad-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
 
     <title>MaRecipe</title>
   </head>
@@ -126,7 +137,7 @@
             </div>
             <div class="col-7 col-sm-6 col-xl-3 col-lg-3 col-md-4 mt-md-4 mt-5">
               <img
-                class="img-fluid"
+                class="img-fluid animate__animated animate__fadeInRightBig"
                 src="./media/home-screen.png"
                 alt="recipe illustration"
               />
@@ -158,20 +169,22 @@
           "
         >
           <div class="col-12 col-md-5">
-            <h1 class="text-center text-md-start">
-              All your recipes in one place
-            </h1>
-            <p class="lead mt-5 text-center text-md-start">
-              Tired of having to remember recipes?
-            </p>
-            <p class="lead text-center text-md-start">
-              With MaRecipe, keep all your favorite recipes in one place!
-            </p>
+            <div class="text fade-in slide-in from-left">
+              <h1 class="text-center text-md-start">
+                All your recipes in one place
+              </h1>
+              <p class="lead mt-5 text-center text-md-start">
+                Tired of having to remember recipes?
+              </p>
+              <p class="lead text-center text-md-start">
+                With MaRecipe, keep all your favorite recipes in one place!
+              </p>
+            </div>
           </div>
           <div class="img-container offset-md-1 col-md-3 mt-3">
             <img
               data-src="./media/recipe-mobile-page.png"
-              class="lazy"
+              class="fade-in slide-in from-right lozad"
               alt="illustration of chef and recipe list"
             />
           </div>
@@ -190,18 +203,20 @@
           <div class="img-container col order-1 order-md-0 col-md-3 mt-3">
             <img
               data-src="./media/community-mobile-page.png"
-              class="lazy"
+              class="fade-in slide-in from-left lozad"
               alt="image of mobile community page"
             />
           </div>
           <div class="col-12 offset-md-1 col-md-5">
-            <h1 class="text-center text-md-start">Discover and learn</h1>
-            <p class="lead mt-5 text-center text-md-start">
-              Find others that share a similar taste palette to you!
-            </p>
-            <p class="lead text-center text-md-start">
-              Or achieve diet goals together!
-            </p>
+            <div class="text fade-in slide-in from-right">
+              <h1 class="text-center text-md-start">Discover and learn</h1>
+              <p class="lead mt-5 text-center text-md-start">
+                Find others that share a similar taste palette to you!
+              </p>
+              <p class="lead text-center text-md-start">
+                Or achieve diet goals together!
+              </p>
+            </div>
           </div>
         </div>
         <hr />
@@ -215,19 +230,21 @@
             align-items-center
           "
         >
-          <div class="col-12 col-md-5">
-            <h1 class="text-center text-md-start">Easy Shopping List</h1>
-            <p class="lead mt-5 text-center text-md-start">
-              No more missed ingredients!
-            </p>
-            <p class="lead text-center text-md-start">
-              Export recipe ingredients into a shopping list
-            </p>
+          <div class="fade-in col-12 col-md-5">
+            <div class="text fade-in slide-in from-left">
+              <h1 class="text-center text-md-start">Easy Shopping List</h1>
+              <p class="lead mt-5 text-center text-md-start">
+                No more missed ingredients!
+              </p>
+              <p class="lead text-center text-md-start">
+                Export recipe ingredients into a shopping list
+              </p>
+            </div>
           </div>
           <div class="img-container offset-md-1 col-md-3 mt-3">
             <img
               data-src="./media/shopping-mobile-page.png"
-              class="lazy"
+              class="fade-in slide-in from-right lozad"
               alt="illustration of chef and recipe list"
             />
           </div>
@@ -243,9 +260,9 @@
             <h2 class="d-none d-md-block">Track your macros efficiently</h2>
             <h1 class="d-md-none display-5">Track your macros efficiently</h1>
             <img
-              class="p-lg-2 mt-lg-3 mt-3 img-fluid lazy"
+              class="p-lg-2 mt-lg-3 mt-3 p-5 p-md-0 img-fluid fade-in lozad"
               data-src="./media/calculator-img.svg"
-              alt=""
+              alt="calculator illustration"
             />
           </div>
           <hr class="d-md-none" />
@@ -253,9 +270,9 @@
             <h2 class="d-none d-md-block">Share your favorite recipes</h2>
             <h1 class="d-md-none display-5">Share your favorite recipes</h1>
             <img
-              class="p-lg-2 mt-lg-4 mt-3 p-md-0 p-sm-5 img-fluid lazy"
+              class="p-lg-2 mt-lg-4 mt-3 p-md-0 p-5 img-fluid fade-in lozad"
               data-src="./media/recipe-2.svg"
-              alt=""
+              alt="recipe list/cart illustration"
             />
           </div>
           <hr class="d-md-none" />
@@ -264,12 +281,13 @@
             <h1 class="d-md-none display-5">Generate shopping lists</h1>
             <img
               data-src="./media/shop-list.svg"
-              alt=""
+              alt="shopping list illustration"
               class="
                 mt-lg-4 mt-xl-3 mt-md-3
-                p-lg-1 p-md-0 p-sm-5
+                p-lg-1 p-md-0 p-5
                 img-fluid
-                lazy
+                fade-in
+                lozad
               "
             />
           </div>

@@ -23,8 +23,21 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Progress Bar CDN-->
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="./css/loadingBar.css" />
+
+    <!--Animation CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--Lazy Load CDN - Lozad-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
 
     <title>MaRecipe</title>
   </head>
@@ -110,7 +123,7 @@
       <div class="jumbotron p-5">
         <div class="container pt-5">
           <div class="row justify-content-around align-items-center">
-            <div class="col-md-6 text-light">
+            <div class="col-md-5 text-light">
               <h1 class="display-4">Explore our communities</h1>
               <h3 class="pt-3">
                 Plenty of recipes to discover and try. Send your palette on an
@@ -119,7 +132,7 @@
             </div>
             <div class="col-md-4 col-lg-3 d-none d-md-block">
               <img
-                class="img-fluid"
+                class="img-fluid animate__animated animate__fadeInRightBig"
                 src="./media/community-mobile-page.png"
                 alt="mobile recipe screen"
               />
@@ -139,7 +152,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/community/keto.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="avocado"
               />
               <a
@@ -171,7 +184,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/community/breakfast-club.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="crepes with cream and strawberries"
               />
               <a
@@ -201,7 +214,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/community/protein-powder.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="protein powder concoction"
               />
               <a
@@ -231,7 +244,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/community/pasta.jpg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="fresh pasta"
               />
               <a
@@ -261,7 +274,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/community/instant-pot.jpeg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="instant pot mac and cheese"
               />
               <a
@@ -291,7 +304,7 @@
             <div class="card shadow">
               <img
                 data-src="./media/community/air-fryer.jpeg"
-                class="card-img-top lazy"
+                class="card-img-top lozad fade-in"
                 alt="salmon in air fryer"
               />
               <a
