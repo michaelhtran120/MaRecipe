@@ -151,6 +151,11 @@ h2 span {
   width: 100%;
 }
 
+/* app-link section - recipe/shopping page */
+.app-link-content h2 {
+  color: var(--main-color);
+}
+
 /* Footer */
 footer {
   /* position: relative; */
