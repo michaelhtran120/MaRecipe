@@ -50,27 +50,42 @@ function backToTop() {
   $(document).scrollTop(0);
 }
 
-// Sign Up Form Check
+// Sign Up Form Check/Validation
 
 let borderErrStyle = "1px solid red";
 let borderStyle = "1px solid #ced4da";
 
 $("#signUpBtn").prop("disabled", true);
 
+let addErrBorderStyle = function (inputElements) {
+  $(inputElements[0]).css("border", borderErrStyle);
+  $(inputElements[1]).css("border", borderErrStyle);
+};
+
+let addBorderStyle = function (inputElements) {
+  $(inputElements[0]).css("border", borderStyle);
+  $(inputElements[1]).css("border", borderStyle);
+};
+
+let emailInput = $("#signUpEmailInput");
+let confirmEmailInput = $("#confirmSignUpEmailInput");
+let passwordInput = $("#signUpPasswordInput");
+let confirmPasswordInput = $("#confirmSignUpPasswordInput");
+
 // Form - Email check for sign up
-$("#confirmSignUpEmail").change(function () {
-  if ($("#signUpEmail").val() !== $(this).val()) {
+$(confirmEmailInput).change(function () {
+  let inputElementsArr = [$(emailInput), this];
+
+  if ($(emailInput).val() !== $(this).val()) {
     $("#errorEmailP").text(`Email's do not match`);
-    $("#signUpEmail").css("border", borderErrStyle);
-    $(this).css("border", borderErrStyle);
+    addErrBorderStyle(inputElementsArr);
   } else {
-    $("errorEmailP").text("");
-    $("#signUpEmail").css("border", borderStyle);
-    $(this).css("border", borderStyle);
+    $("#errorEmailP").text("");
+    addBorderStyle(inputElementsArr);
     if (
-      $("#signUpPassword").val() === $("#confirmSignUpPassword") &&
-      $("#signUpPassword").val() !== "" &&
-      $(this).val() !== ""
+      $(passwordInput).val() === $(confirmPasswordInput).val() &&
+      $(passwordInput).val() !== "" &&
+      $(confirmPasswordInput).val() !== ""
     ) {
       $("#signUpBtn").prop("disabled", false);
     }
@@ -80,8 +95,7 @@ $("#confirmSignUpEmail").change(function () {
 // Password check logic
 // Password check length on keypress
 
-$("#signUpPassword").keypress(function () {
-  console.log($(this).val().length);
+$(passwordInput).keypress(function () {
   if ($(this).val().length > 6) {
     $("#errorPasswordP").text(" ");
   } else {
@@ -89,22 +103,22 @@ $("#signUpPassword").keypress(function () {
   }
 });
 
-// Password check confirmation on change.
+// Password confirmation check
 
-$("#confirmSignUpPassword").change(function () {
-  if ($(this).val() !== $("#signUpPassword").val()) {
+$(confirmPasswordInput).change(function () {
+  let inputElementsArr = [$(passwordInput), this];
+
+  if ($(this).val() !== $(passwordInput).val()) {
     $("#errorPasswordP").text(`Passwords do not match`);
-    $(this).css("border", borderErrStyle);
-    $("#signUpPassword").css("border", borderErrStyle);
+    addErrBorderStyle(inputElementsArr);
     $("#signUpBtn").prop("disabled", true);
   } else {
     $("#errorPasswordP").text("");
-    $(this).css("border", borderStyle);
-    $("#signUpPassword").css("border", borderStyle);
+    addBorderStyle(inputElementsArr);
     if (
-      $("#signUpEmail").val() === $("#confirmSignUpEmail").val() &&
-      $("#signUpEmail").val() !== "" &&
-      $("#confirmSignUpEmail").val() !== ""
+      $(emailInput).val() === $(confirmEmailInput).val() &&
+      $(emailInput).val() !== "" &&
+      $(confirmEmailInput).val() !== ""
     ) {
       $("#signUpBtn").prop("disabled", false);
     }
