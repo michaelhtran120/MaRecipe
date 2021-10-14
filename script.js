@@ -1,3 +1,5 @@
+// insantiate lozad;
+
 const observer = lozad();
 observer.observe();
 
