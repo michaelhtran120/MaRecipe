@@ -43,4 +43,5 @@ This static page is currently being hosted using Github pages
 
 ## Contact
 
-<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"> ]<michaelhtran120@gmail.com>
+<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"> <michaelhtran120@gmail.com>
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"> <https://www.linkedin.com/in/michaelhtran120/>
