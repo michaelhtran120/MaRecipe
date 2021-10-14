@@ -20,6 +20,11 @@
 .shopping-feature h4 {
   display: inline;
 }
+
+.shopping-feature span {
+  color: var(--main-color);
+}
+
 .shopping-feature img {
   object-fit: cover;
 }
