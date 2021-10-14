@@ -43,13 +43,11 @@ This static page is currently being hosted using Github pages
 
 ## Contact
 
-<img src="{https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
-}">
+<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 | Options | Link |
 | ------------- | ------------- |
-| <img src="{https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
-}"> | michaelhtran120@gmail.com |
+| <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
+"> | michaelhtran120@gmail.com |
 | Content Cell | Content Cell |
 
-![<img src="{https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
-}">](malito:michaelhtran120@gmail.com)
+![<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">](malito:michaelhtran120@gmail.com)
