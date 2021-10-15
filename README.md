@@ -10,8 +10,6 @@ The project idea stem from my focus on diet and interest in cooking, but its dif
 
 This is only a static page to show what I will eventually build into a single page web application using React and hopefully an application with React Native.
 
-I have had previous experience working with CSS prior to learning Bootstrap so I felt at ease utilize Bootstrap to quickly design my webpage layout and using custom CSS to override Bootstrap when needed to fit my design vision. I did want a bit more complexity to the web page so I played around with CSS animations that hopefully adds a bit more modern feel to the static webpage. Overall there were slight issues with responsiveness that took time to troubleshoot, but it was a good learning experience. Although I am still having issues with the parallax video working on mobile browser.
-
 ## Some CSS features
 
 - Custom hover Effects for buttons
@@ -35,6 +33,12 @@ As of now the forms do not function as there is no backend tied to this project,
 As of October 14 2021:
 
 The wireframes shown throughout the static pages are rough ideas of what I imagine the application to appear and do not show the actual representation. I aim to replace these images once the native application has been developed.
+
+## Conclusion
+
+I have had previous experience working with CSS prior to learning Bootstrap so I felt at ease utilize Bootstrap to quickly design my webpage layout and using custom CSS to override Bootstrap when needed to fit my design vision. I did want a bit more complexity to the web page so I played around with CSS animations that hopefully adds a bit more modern feel to the static webpage. Overall there were slight issues with responsiveness that took time to troubleshoot, but it was a good learning experience. Although I am still having issues with the parallax video working on mobile browser.
+
+May remove the accordion on the recipe page as it doesn't really fit or flow. Or I might redesign the information differently. Since the static page is meant to be informative about the application, I didn't want to create anything that would make it difficult for users to find what they need.
 
 ## Hosting
 
