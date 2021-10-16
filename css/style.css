@@ -186,7 +186,7 @@ svg:hover {
 /* Modal Window */
 
 #loginModal {
-  top: 25%;
+  top: 15%;
 }
 
 #signUpModal {
@@ -202,6 +202,11 @@ svg:hover {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+}
+
+#signUpLink {
+  color: var(--main-color);
+  cursor: pointer;
 }
 
 .modal-header {

@@ -24,6 +24,10 @@ I discovered a few CDN's that help with lazy loading, animations, and a progress
 2. Animate.css for some animation assistance
 3. Pace.js for progress bar for visual display of content loading.
 
+## Javascript / JQuery
+
+I prefer to use plain Javascript, but I utilized JQuery as a learning experience and practice.
+
 ## Forms
 
 As of now the forms do not function as there is no backend tied to this project, but I did add javascript to provide some input verification in the sign up modal.
