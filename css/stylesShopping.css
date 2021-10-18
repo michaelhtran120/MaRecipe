@@ -1,19 +1,24 @@
 /* Jumbotron hero CSS */
-
-.jumbotron {
-  background: url(../media/hero-images/shopping-hero.jpg) no-repeat center
-    center;
+.hero {
+  background: url(../media/hero-images/shopping-hero.jpg) no-repeat center center;
   background-size: cover;
 }
 
-/* Shopping List Feature Section */
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
+.jumbotron span {
+  color: #79b473;
+}
+
+/* Shopping List Feature Section */
 .shopping-feature video {
   width: 275px;
   margin: 0 auto;
 }
 
-.col-img {
+.shopping-feature .col-img {
   padding: 0;
 }
 
@@ -22,7 +27,7 @@
 }
 
 .shopping-feature span {
-  color: var(--main-color);
+  color: #79b473;
 }
 
 .shopping-feature img {
@@ -38,11 +43,13 @@
   margin: 20px 0px;
 }
 
+/* Media Queries*/
 @media only screen and (max-width: 768px) {
   h4 {
     font-size: 1.2rem;
   }
 }
+
 @media only screen and (max-width: 576px) {
   h4 {
     font-size: 1rem;

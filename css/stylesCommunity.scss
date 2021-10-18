@@ -1,0 +1,76 @@
+$main-color: #79b473;
+
+//
+/*Hero Section*/
+//
+.jumbotron {
+  background: url(../media/hero-images/community-hero.jpg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+//
+/* Trending Communities */
+//
+.trending-communities {
+  h2,
+  h5 {
+    color: $main-color;
+  }
+  .card {
+    height: 400px;
+  }
+  img {
+    object-fit: cover;
+    height: 220px;
+  }
+  a {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: $main-color;
+  }
+  p {
+    display: inline;
+  }
+  .card-footer {
+    height: 70px;
+  }
+  .row {
+    height: 100%;
+  }
+}
+
+//
+/* Communities Info Section */
+//
+#communities-info-or {
+  color: $main-color;
+}
+
+//
+/* Media Queries */
+//
+@media only screen and (max-width: 992px) {
+  .communities-info {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .communities-info {
+    h3 {
+      font-size: 1.15rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .communities-info {
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}

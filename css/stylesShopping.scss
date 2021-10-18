@@ -1,0 +1,61 @@
+$main-color: #79b473;
+
+//
+/* Jumbotron hero CSS */
+//
+.hero {
+  background: url(../media/hero-images/shopping-hero.jpg) no-repeat center
+    center;
+  background-size: cover;
+}
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.2);
+  span {
+    color: $main-color;
+  }
+}
+
+//
+/* Shopping List Feature Section */
+//
+.shopping-feature {
+  video {
+    width: 275px;
+    margin: 0 auto;
+  }
+
+  .col-img {
+    padding: 0;
+  }
+  h4 {
+    display: inline;
+  }
+  span {
+    color: $main-color;
+  }
+  img {
+    object-fit: cover;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    margin: 20px 0px;
+  }
+}
+
+//
+/* Media Queries*/
+//
+@media only screen and (max-width: 768px) {
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h4 {
+    font-size: 1rem;
+  }
+}

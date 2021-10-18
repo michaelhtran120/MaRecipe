@@ -13,10 +13,10 @@
     />
 
     <!--Custom CSS-->
-    <!--Applicapble to all pages-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!--Applicable to all pages-->
+    <link rel="stylesheet" href="./css/styles.css" />
     <!--Only for recipe page-->
-    <link rel="stylesheet" href="./css/style-recipe.css" />
+    <link rel="stylesheet" href="./css/stylesRecipe.css" />
     <!--Custom Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!--Progress Bar CDN-->
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="./css/loadingBar.css" />
@@ -44,7 +47,7 @@
     <title>MaRecipe</title>
   </head>
   <body>
-    <!--Nav-->
+    <!--Top Navigation Bar-->
     <nav
       class="
         navbar navbar-expand-md navbar-light
@@ -54,9 +57,11 @@
       "
     >
       <div class="container-fluid">
+        <!-- Logo acts as the button to go to home page of site -->
         <a class="navbar-brand" href="index.html"
           ><img src="./media/logo.svg" width="150px" alt="MaRecipe Logo"
         /></a>
+        <!-- Nav menu toggler on small screens / mobile -->
         <button
           class="navbar-toggler"
           type="button"
@@ -68,8 +73,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- nav menu that is being toggle -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="nav-container">
+            <!-- Separate navigation to left side (site links) -->
             <div class="nav navbar-left">
               <ul class="navbar-nav justify-content-end">
                 <li class="nav-item mx-3">
@@ -89,7 +96,7 @@
                 </li>
               </ul>
             </div>
-
+            <!-- And right side (login / signup btn) -->
             <div class="nav navbar-right">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-3">
@@ -146,7 +153,7 @@
     <div class="featured-recipes py-5">
       <div class="container-fluid p-sm-5">
         <h2 class="text-center">FEATURED RECIPES</h2>
-        <hr class="text-black-50" />
+        <hr style="height: '2px'" class="text-black-50" />
         <div class="row justify-content-center p-sm-4 p-md-5 gy-4">
           <div class="col-sm-6 col-lg-4">
             <div class="card shadow">

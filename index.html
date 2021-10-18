@@ -13,7 +13,7 @@
     />
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <!--Custom Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +39,7 @@
     <title>MaRecipe</title>
   </head>
   <body>
-    <!--Top Navigation-->
+    <!--Top Navigation Bar-->
     <nav
       class="
         navbar navbar-expand-md navbar-light
@@ -49,9 +49,11 @@
       "
     >
       <div class="container-fluid">
+        <!-- Logo acts as the button to go to home page of site -->
         <a class="navbar-brand" href="#"
           ><img src="./media/logo.svg" width="150px" alt="MaRecipe Logo"
         /></a>
+        <!-- Nav menu toggler on small screens / mobile -->
         <button
           class="navbar-toggler"
           type="button"
@@ -63,8 +65,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- nav menu that is being toggle -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="nav-container">
+            <!-- Separate navigation to left side (site links) -->
             <div class="nav navbar-left">
               <ul class="navbar-nav justify-content-end">
                 <li class="nav-item mx-3">
@@ -84,7 +88,7 @@
                 </li>
               </ul>
             </div>
-
+            <!-- And right side (login / signup btn) -->
             <div class="nav navbar-right">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-3">
@@ -147,15 +151,15 @@
       </div>
     </section>
 
-    <!--Parallax Video background-->
-    <section class="video-section container-fluid">
+    <!--Parallax Video background of hero div-->
+    <div class="video-section container-fluid">
       <div class="parallax-video">
         <video poster="./media/poster.jpg" autoplay muted loop>
           <source src="./media/recipe-video.ogv" type="video/ogv" />
           <source src="./media/recipe-video.mp4" type="video/mp4" />
         </video>
       </div>
-    </section>
+    </div>
 
     <!-- Main Content section -->
     <section class="main-content-section bg-light text-dark p-5">

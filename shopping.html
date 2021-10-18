@@ -13,8 +13,11 @@
     />
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/style-shopping.css" />
+    <!-- Applicable to all pages -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Only Shopping page -->
+    <link rel="stylesheet" href="./css/stylesShopping.css" />
+
     <!--Custom Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Progress Bar CDN-->
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
@@ -42,7 +47,7 @@
     <title>MaRecipe</title>
   </head>
   <body>
-    <!--Top Navigation-->
+    <!--Top Navigation Bar-->
     <nav
       class="
         navbar navbar-expand-md navbar-light
@@ -52,9 +57,11 @@
       "
     >
       <div class="container-fluid">
+        <!-- Logo acts as the button to go to home page of site -->
         <a class="navbar-brand" href="index.html"
           ><img src="./media/logo.svg" width="150px" alt="MaRecipe Logo"
         /></a>
+        <!-- Nav menu toggler on small screens / mobile -->
         <button
           class="navbar-toggler"
           type="button"
@@ -66,8 +73,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- nav menu that is being toggle -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="nav-container">
+            <!-- Separate navigation to left side (site links) -->
             <div class="nav navbar-left">
               <ul class="navbar-nav justify-content-end">
                 <li class="nav-item mx-3">
@@ -87,7 +96,7 @@
                 </li>
               </ul>
             </div>
-
+            <!-- And right side (login / signup btn) -->
             <div class="nav navbar-right">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-3">
@@ -118,12 +127,12 @@
     </nav>
 
     <!--Hero Section-->
-    <section class="jumbo-bg">
+    <section class="hero">
       <div class="jumbotron p-5">
         <div class="container pt-5">
           <div class="row justify-content-around align-items-center">
             <div class="col-md-6 text-light">
-              <h1 class="display-4">Say Goodbye!</h1>
+              <h1 class="display-4">Say <span>Goodbye!</span></h1>
               <h3 class="pt-5">
                 To handwritten lists and forgotten ingredients
               </h3>

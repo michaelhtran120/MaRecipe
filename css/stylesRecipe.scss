@@ -1,0 +1,171 @@
+$main-color: #79b473;
+
+//
+/* Jumbotron hero CSS */
+//
+.jumbotron {
+  background: url(../media/hero-images/recipe-hero.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+//
+/* Featured Recipes Section */
+//
+
+.featured-recipes {
+  h2,
+  h5 {
+    letter-spacing: 2px;
+    color: $main-color;
+  }
+  .card {
+    position: relative;
+    height: 480px;
+    border-radius: 10px;
+  }
+  img {
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    border-radius: 10px 10px 0 0;
+  }
+  a {
+    position: absolute;
+    width: 90%;
+    bottom: 5px;
+    background-color: none;
+    color: $main-color;
+    letter-spacing: 0;
+    &:hover {
+      letter-spacing: 4px;
+      color: $main-color;
+      transition: all 400ms ease-in-out;
+    }
+    &:before,
+    &:after {
+      backface-visibility: hidden;
+      border: 1px solid $main-color;
+      bottom: 0px;
+      content: "";
+      display: block;
+      margin: 5px auto;
+      position: relative;
+      transition: all 400ms ease-in-out;
+      width: 0;
+    }
+    &:hover:before,
+    &:hover:after {
+      backface-visibility: hidden;
+      border-color: $main-color;
+      transition: width 350ms ease-in-out;
+      width: 70%;
+    }
+    &:hover:before {
+      bottom: auto;
+      top: 0;
+      width: 70%;
+    }
+  }
+}
+
+//
+/* Recipe App/Link Section */
+//
+.app-link-content {
+  h2 {
+    color: $main-color;
+  }
+}
+
+//
+/* Accordion CSS */
+//
+.accordion-section {
+  background-color: $main-color;
+  .card-header[aria-expanded="true"] {
+    background: $main-color;
+    color: white;
+  }
+  .card-header[aria-expanded="false"] {
+    background: rgb(248, 249, 250);
+    color: black;
+  }
+  .card {
+    a {
+      text-decoration: none;
+      color: $main-color;
+    }
+  }
+}
+
+//
+/* Media Queries */
+//
+@media only screen and (max-width: 1200px) {
+  /* Featured Recipe section */
+  .featured-recipes {
+    .card {
+      height: 420px;
+    }
+    img {
+      height: 225px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* Featured Recipe section */
+
+  .featured-recipes {
+    .card {
+      height: 440px;
+    }
+    img {
+      height: 250px;
+    }
+  }
+
+  /* Macro Section */
+  .macro {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Featured Recipe section */
+
+  .featured-recipes {
+    .card {
+      height: 440px;
+    }
+    img {
+      height: 200px;
+    }
+  }
+
+  /* Macro Section */
+  .macro {
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Featured Recipe section */
+
+  .featured-recipes {
+    .card {
+      height: 380px;
+    }
+  }
+
+  /* Macro Section */
+  .macro {
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+}

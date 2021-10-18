@@ -42,6 +42,8 @@ The wireframes shown throughout the static pages are rough ideas of what I imagi
 
 I have had previous experience working with CSS prior to learning Bootstrap so I felt at ease utilize Bootstrap to quickly design my webpage layout and using custom CSS to override Bootstrap when needed to fit my design vision. I did want a bit more complexity to the web page so I played around with CSS animations that hopefully adds a bit more modern feel to the static webpage. Overall there were slight issues with responsiveness that took time to troubleshoot, but it was a good learning experience. Although I am still having issues with the parallax video working on mobile browser.
 
+Another great learning experience is using SASS versus vanilla CSS. Help keep my CSS tidier and readablability when revisiting styles.
+
 May remove the accordion on the recipe page as it doesn't really fit or flow. Or I might redesign the information differently. Since the static page is meant to be informative about the application, I didn't want to create anything that would make it difficult for users to find what they need.
 
 ## Hosting

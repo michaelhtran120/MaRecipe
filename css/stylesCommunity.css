@@ -1,14 +1,13 @@
+/*Hero Section*/
 .jumbotron {
-  background: url(../media/hero-images/community-hero.jpg) no-repeat center
-    center;
+  background: url(../media/hero-images/community-hero.jpg) no-repeat center center;
   background-size: cover;
 }
 
 /* Trending Communities */
-
-.trending-communities h5,
-.trending-communities h2 {
-  color: var(--main-color);
+.trending-communities h2,
+.trending-communities h5 {
+  color: #79b473;
 }
 
 .trending-communities .card {
@@ -24,7 +23,7 @@
   position: absolute;
   right: 5px;
   top: 5px;
-  background-color: var(--main-color);
+  background-color: #79b473;
 }
 
 .trending-communities p {
@@ -40,18 +39,17 @@
 }
 
 /* Communities Info Section */
-
 #communities-info-or {
-  color: var(--main-color);
+  color: #79b473;
 }
 
 /* Media Queries */
-
 @media only screen and (max-width: 992px) {
   .communities-info h3 {
     font-size: 1.5rem;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .communities-info h3 {
     font-size: 1.15rem;
