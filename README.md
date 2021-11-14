@@ -4,7 +4,7 @@
 
 ## Overview
 
-This static webpage was built for Nucamp's fullstack portfolio project during the Bootstrap course section. The goal is to utilize Bootstrap to quickly build a webpage. (Utlize the Bootstrap CDN instead of NPM install)
+The goal is to utilize Bootstrap to quickly build a webpage. (Utlize the Bootstrap CDN instead of NPM install)
 
 The project idea stem from my focus on diet and interest in cooking, but its difficult to constantly having to calculate the macros involved in everything I cook.
 
